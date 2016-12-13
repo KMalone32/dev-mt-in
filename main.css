@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
+
+body {
+	width: 100%;
+	max-width: 700px;
+}
+
+header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: solid 1px #EAEAEA;
+	margin-bottom: 30px;
+}
+
+header svg {
+	padding: 30px;
+}
+
+header h6 {
+	font-family: 'Lora', serif;
+	font-size: 16.8px;
+	color: #272727;
+	padding: 30px;
+}
+
+main {
+	display: flex;
+}
+
+main .left-side {
+	width: 44%;
+	text-align: center;
+}
+
+main .left-side .welcome-text {
+	padding: 20px;
+	font-family: 'Lora', serif;
+	font-size: 13.18px;
+	line-height: 14px;
+	color: #000000;
+}
+
+main .left-side .text-turquoise {
+	color: #74FDF2;
+}
+
+input[type="text"]::-webkit-input-placeholder, 
+textarea[type="text"]::-webkit-input-placeholder {
+	font-family: 'Lora', serif;
+	font-size: 15.96px;
+	color: #B6B6B6;
+}
+
+main .left-side .small-box {
+	padding: 10px 10px 5px 10px;
+	width: 75%;
+	margin-bottom: 10px;
+	border: solid 1px #EAEAEA;
+}
+
+main .left-side .large-box {
+	resize: none;
+	width: 75%;
+	padding: 7px 10px 140px 10px;
+	margin-bottom: 7px;
+	border: solid 1px #EAEAEA;
+}
+
+main .left-side .btn {
+	width: 82%;
+	padding: 10px;
+	background: #74FDF2;
+	border: none;
+	font-family: 'Lora', serif;
+	font-size: 13.44px;
+	color: #9A9A9A;
+}
+
+main .right-side {
+	width: 56%;
+	position: relative;
+}
+
+main .right-side .background-triangle {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-bottom: 298px solid rgba(108, 104, 104, 0.5);
+	border-left: 175px solid transparent;
+	border-right: 200px solid transparent;
+	transform: rotate(5deg);
+}
+
+main .right-side .profile-triangle {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-bottom: 298px solid rgba(116, 253, 242, 1);
+	border-left: 175px solid transparent;
+	border-right: 175px solid transparent;
+	transform: rotate(52deg);
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+footer {
+	margin: auto;
+	margin-top: 57px;
+	width: 85%;
+	max-width: 700px;
+	display: flex;
+	justify-content: space-between;
+	border-top: solid 2px #EAEAEA;
+}
+
+footer a {
+	padding: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13.2px;
+	color: #A9A9A9;
+	text-decoration: none;
+}
