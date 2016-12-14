@@ -274,6 +274,17 @@ main .friend-header svg {
     padding: 10px;
 }
 
+main .friend-pics {
+    display: flex;
+    justify-content: center;
+}
+
+main .friend-pics img {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
 footer {
 	margin: auto;
 	margin-top: 100px;
