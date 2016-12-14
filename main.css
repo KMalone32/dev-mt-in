@@ -18,9 +18,14 @@ header svg {
 	padding: 30px;
 }
 
+header .nav-button:hover {
+    cursor: pointer;
+}
+
 header h6 {
 	font-family: 'Lora', serif;
 	font-size: 16.8px;
+    line-height: 21px;
 	color: #272727;
 	padding: 30px;
 }
@@ -30,7 +35,7 @@ main {
 }
 
 main .left-side {
-	width: 44%;
+	width: 48%;
 	text-align: center;
 }
 
@@ -50,6 +55,7 @@ input[type="text"]::-webkit-input-placeholder,
 textarea[type="text"]::-webkit-input-placeholder {
 	font-family: 'Lora', serif;
 	font-size: 15.96px;
+    line-height: 21px;
 	color: #B6B6B6;
 }
 
@@ -70,11 +76,12 @@ main .left-side .large-box {
 
 main .left-side .btn {
 	width: 82%;
-	padding: 10px;
+	padding: 6px;
 	background: #74FDF2;
 	border: none;
 	font-family: 'Lora', serif;
 	font-size: 13.44px;
+    line-height: 17px;
 	color: #9A9A9A;
 }
 
@@ -85,29 +92,72 @@ main .right-side {
 
 main .right-side .background-triangle {
 	position: absolute;
-	width: 0;
-	height: 0;
-	border-bottom: 298px solid rgba(108, 104, 104, 0.5);
-	border-left: 175px solid transparent;
-	border-right: 200px solid transparent;
-	transform: rotate(5deg);
+    width: 0;
+    height: 0;
+    margin-top: 30px;
+    border-bottom: 271px solid rgba(108, 104, 104, 0.5);
+    border-left: 172px solid transparent;
+    border-right: 192px solid transparent;
+    transform: rotate(7deg);
 }
 
 main .right-side .profile-triangle {
-	position: absolute;
-	width: 0;
-	height: 0;
-	border-bottom: 298px solid rgba(116, 253, 242, 1);
-	border-left: 175px solid transparent;
-	border-right: 175px solid transparent;
-	transform: rotate(52deg);
-	margin-top: 10px;
-	margin-left: 10px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 277px solid rgba(116, 253, 242, 1);
+    border-left: 184px solid transparent;
+    border-right: 140px solid transparent;
+    transform: rotate(48deg);
+    margin-top: 107px;
+    margin-left: 33px;
+}
+
+main .right-side .profile-shadow1 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 277px solid transparent;
+    border-left: 207px solid transparent;
+    border-right: 140px solid transparent;
+    transform: rotate(172deg);
+    margin-top: 193px;
+    margin-left: -4px;
+    z-index: -1;
+    box-shadow: 0 18px 22px -22px rgba(0, 0, 0, 0.2);
+}
+
+main .right-side .profile-shadow2 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 277px solid transparent;
+    border-left: 200px solid transparent;
+    border-right: 140px solid transparent;
+    transform: rotate(-69deg);
+    margin-top: 126px;
+    margin-left: -43px;
+    z-index: -1;
+    box-shadow: 0 18px 22px -22px rgba(0, 0, 0, 0.2);
+}
+
+main .right-side .profile-shadow3 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 277px solid transparent;
+    border-left: 211px solid transparent;
+    border-right: 140px solid transparent;
+    transform: rotate(48deg);
+    margin-top: 107px;
+    margin-left: 21px;
+    z-index: -1;
+    box-shadow: 0 18px 22px -22px rgba(0, 0, 0, 0.5);
 }
 
 footer {
 	margin: auto;
-	margin-top: 57px;
+	margin-top: 100px;
 	width: 85%;
 	max-width: 700px;
 	display: flex;
@@ -119,6 +169,7 @@ footer a {
 	padding: 20px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13.2px;
+    line-height: 18px;
 	color: #A9A9A9;
 	text-decoration: none;
 }
