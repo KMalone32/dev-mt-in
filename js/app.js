@@ -6,7 +6,8 @@ angular.module("devMtnApp", ["ui.router"])
   $stateProvider
   .state('views', {
     url: '/views',
-    templateUrl: './views/init_view.html'
+    templateUrl: './views/init_view.html',
+    controller:'mainCtrl'
   })
   .state('landing', {
     url: '/landing',
