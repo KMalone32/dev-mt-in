@@ -2,13 +2,17 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:600');
 
+/* APPLIES TO ALL VIEWS */
+
 body {
 	width: 100%;
-    margin: auto;
+	margin: auto;
 	max-width: 650px;
-    min-width: 650px;
-    margin-top: 50px;
+	min-width: 650px;
+	margin-top: 50px;
 }
+
+/* HEADER: APPLIES TO ALL VIEWS */
 
 header {
 	width: 100%;
@@ -22,17 +26,19 @@ header svg {
 	padding: 30px;
 }
 
-.nav-button:hover {
-    cursor: pointer;
-}
-
 header h6 {
 	font-family: 'Lora', serif;
 	font-size: 16.8px;
-    line-height: 21px;
+  line-height: 21px;
 	color: #272727;
 	padding: 30px;
 }
+
+.nav-button:hover {
+	cursor: pointer;
+}
+
+/* MAIN: APPLIES TO ALL VIEWS */
 
 main {
 	display: flex;
@@ -43,42 +49,51 @@ main .left-side {
 	text-align: center;
 }
 
+main .right-side {
+	width: 56%;
+	position: relative;
+}
+
+/* MAIN: APPLIES TO FRIENDS_VIEW, LANDING_VIEW */
+
 main .left-side h1 {
-    font-family: 'Lora', serif;
-    font-size: 38.4px;
-    margin-top: 20px;
-    color: #272727;
-    width: 200px;
-    margin: auto;
-}
-
-main .left-side #tagline {
-    font-family: 'Open Sans', serif;
-    font-size: 10.2px;
-    font-weight: 600;
-    width: 200px;
-    margin: auto;
-    margin-top: 20px;
-}
-
-main .left-side .para {
-    font-family: 'Open Sans', serif;
-    font-size: 10.2px;
-    line-height: 14px;
-    text-align: justify;
-    text-justify: inter-word;
-    width: 200px;
-    margin: auto;
-    margin-top: 20px;
+  font-family: 'Lora', serif;
+  font-size: 38.4px;
+  margin-top: 20px;
+  color: #272727;
+  width: 200px;
+  margin: auto;
 }
 
 #first-name {
-    text-align: left;
+  text-align: left;
 }
 
 #last-name {
-    text-align: right;
+  text-align: right;
 }
+
+main .left-side #tagline {
+	font-family: 'Open Sans', serif;
+	font-size: 10.2px;
+	font-weight: 600;
+	width: 200px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+main .left-side .para {
+	font-family: 'Open Sans', serif;
+	font-size: 10.2px;
+	line-height: 14px;
+	text-align: justify;
+	text-justify: inter-word;
+	width: 200px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+/* MAIN: APPLIES TO INIT_VIEW */
 
 main .left-side .welcome-text {
 	padding: 20px;
@@ -92,22 +107,22 @@ main .left-side .text-turquoise {
 	color: #74FDF2;
 }
 
-input[type="text"]::-webkit-input-placeholder, 
+input[type="text"]::-webkit-input-placeholder,
 textarea[type="text"]::-webkit-input-placeholder {
 	font-family: 'Lora', serif;
 	font-size: 15.96px;
-    line-height: 21px;
+  line-height: 21px;
 	color: #B6B6B6;
 }
 
-main .left-side .small-box {
+main .small-box {
 	padding: 10px 10px 5px 10px;
 	width: 75%;
 	margin-bottom: 10px;
 	border: solid 1px #EAEAEA;
 }
 
-main .left-side .large-box {
+main .large-box {
 	resize: none;
 	width: 75%;
 	padding: 7px 10px 140px 10px;
@@ -122,58 +137,99 @@ main .left-side .btn {
 	border: none;
 	font-family: 'Lora', serif;
 	font-size: 13.44px;
-    line-height: 17px;
+  line-height: 17px;
 	color: #9A9A9A;
 }
 
-main .right-side {
-	width: 56%;
-	position: relative;
-}
+/* MAIN: APPLIES TO INIT_VIEW, LANDING_VIEW */
 
 .triangles {
-    margin-top: -48px;
+  margin-top: -48px;
 }
 
 .background-triangle {
-    -webkit-clip-path: polygon(52% 75%, 0 0, 100% 0);
-    width: 350px;
-    height: 350px;
-    overflow: hidden;
-    background: rgba(108, 104, 104, 0.2);
-    transform: rotate(-173deg);
-    position: absolute;
+  -webkit-clip-path: polygon(52% 75%, 0 0, 100% 0);
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  background: rgba(108, 104, 104, 0.2);
+  transform: rotate(-173deg);
+  position: absolute;
 }
 
 .background-triangle img {
-    width: 400px;
-    height: 300px;
-    opacity: 0.1;
-    transform: rotate(171deg);
-    position: absolute;
-    margin-top: -26px;
-    margin-left: -27px;
+  width: 400px;
+  height: 300px;
+  opacity: 0.1;
+  transform: rotate(171deg);
+  position: absolute;
+  margin-top: -26px;
+  margin-left: -27px;
 }
 
 .profile-triangle {
-    -webkit-clip-path: polygon(52% 75%, 0 0, 100% 0);
-    width: 350px;
-    height: 350px;
-    overflow: hidden;
-    background: rgba(116, 253, 242, 1);
-    transform: rotate(-7deg);
-    position: absolute;
-    margin-top: 242px;
+  -webkit-clip-path: polygon(52% 75%, 0 0, 100% 0);
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  background: rgba(116, 253, 242, 1);
+  transform: rotate(-7deg);
+  position: absolute;
+  margin-top: 242px;
 }
 
 .profile-icon {
-    -webkit-clip-path: polygon(52% 75%, 0 0, 100% 0);
-    width: 40px;
-    height: 40px;
-    overflow: hidden;
-    background: rgba(116, 253, 242, 1);
-    margin: 25px 20px 20px 20px;
+  -webkit-clip-path: polygon(52% 75%, 0 0, 100% 0);
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  background: rgba(116, 253, 242, 1);
+  margin: 25px 20px 20px 20px;
 }
+
+main .right-side .profile-shadow1 {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-bottom: 270px solid transparent;
+	border-left: 237px solid transparent;
+	border-right: 140px solid transparent;
+	transform: rotate(173deg);
+	margin-top: 244px;
+	margin-left: -17px;
+	z-index: -1;
+	box-shadow: 0 18px 22px -22px rgba(0, 0, 0, 0.5);
+}
+
+main .right-side .profile-shadow2 {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-bottom: 277px solid transparent;
+	border-left: 200px solid transparent;
+	border-right: 140px solid transparent;
+	transform: rotate(-64deg);
+	margin-top: 161px;
+	margin-left: -35px;
+	z-index: -1;
+	box-shadow: 0 18px 22px -22px rgba(0, 0, 0, 0.5);
+}
+
+main .right-side .profile-shadow3 {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-bottom: 277px solid transparent;
+	border-left: 211px solid transparent;
+	border-right: 140px solid transparent;
+	transform: rotate(48.2deg);
+	margin-top: 151px;
+	margin-left: 13px;
+	z-index: -1;
+	box-shadow: 0 18px 22px -22px rgba(0, 0, 0, 0.5);
+}
+
+/* MAIN: APPLIES TO LANDING_VIEW */
 
 .line {
     width: 40px;
@@ -200,47 +256,7 @@ main .right-side {
     opacity: 0.4;
 }
 
-main .right-side .profile-shadow1 {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-bottom: 270px solid transparent;
-    border-left: 237px solid transparent;
-    border-right: 140px solid transparent;
-    transform: rotate(173deg);
-    margin-top: 244px;
-    margin-left: -17px;
-    z-index: -1;
-    box-shadow: 0 18px 22px -22px rgba(0, 0, 0, 0.5);
-}
-
-main .right-side .profile-shadow2 {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-bottom: 277px solid transparent;
-    border-left: 200px solid transparent;
-    border-right: 140px solid transparent;
-    transform: rotate(-64deg);
-    margin-top: 161px;
-    margin-left: -35px;
-    z-index: -1;
-    box-shadow: 0 18px 22px -22px rgba(0, 0, 0, 0.5);
-}
-
-main .right-side .profile-shadow3 {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-bottom: 277px solid transparent;
-    border-left: 211px solid transparent;
-    border-right: 140px solid transparent;
-    transform: rotate(48.2deg);
-    margin-top: 151px;
-    margin-left: 13px;
-    z-index: -1;
-    box-shadow: 0 18px 22px -22px rgba(0, 0, 0, 0.5);
-}
+/* MAIN: APPLIES TO FRIEND_VIEW */
 
 main .friend-header {
     display: flex;
@@ -275,15 +291,92 @@ main .friend-header svg {
 }
 
 main .friend-pics {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	width: 317px;
+	margin-left: -10px;
+	overflow: hidden;
 }
 
-main .friend-pics img {
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
+main .friend-pics .pic {
+	width: 48%;
+	height: 100%;
+	overflow: hidden;
+	padding: 10px 0px 0px 10px;
+	margin-right: 5px;
 }
+
+main .friend-pics .pic img {
+	height: 110px;
+	width: 100%;
+	object-fit: cover;
+}
+
+/* MAIN: APPLIES TO NEWFRIENDS_VIEW */
+
+main .friend-header #svg-side-border {
+	border-right: solid 1px #EAEAEA;
+}
+
+main .friend-header h6 {
+	font-family: 'Lora', serif;
+	font-size: 16.8px;
+	line-height: 21px;
+	color: #232323;
+	padding: 5px;
+	margin-right: 68px;
+}
+
+/* MAIN: APPLIES TO FRIEND_PROFILE_VIEW */
+
+main .left-side .btn-add-friend {
+	width: 67%;
+	margin-top: 20px;
+	padding: 6px;
+	background: #74FDF2;
+	border: none;
+	font-family: 'Lora', serif;
+	font-size: 13.18px;
+  line-height: 16px;
+	color: #232323;
+}
+
+/* MAIN; APPLIES TO UPDATE_PROFILE_VIEW */
+
+main .right-side h4 {
+	text-align: center;
+	width: 100%;
+	margin: 0;
+}
+
+main .right-side .update-profile {
+	padding: 10px 10px 0px 10px;
+  width: 85.5%;
+  margin-top: 10px;
+  border: solid 1px #EAEAEA;
+	box-shadow: 0px 2px 9px -2px #EAEAEA;
+}
+
+main .right-side #resized-box {
+	width: 92%;
+}
+
+main .right-side .btn {
+	width: 85.5%;
+	margin-top: 10px;
+	padding: 6px;
+	background: white;
+	border: solid 1px #EAEAEA;
+	font-family: 'Lora', serif;
+	font-size: 13.44px;
+  line-height: 17px;
+	color: #9A9A9A;
+	cursor: pointer;
+	box-shadow: 0px 2px 9px -2px #EAEAEA;
+}
+
+/* FOOTER: APPLIES TO ALL VIEWS */
 
 footer {
 	margin: auto;
@@ -304,6 +397,8 @@ footer a {
 	color: #A9A9A9;
 	text-decoration: none;
 }
+
+/* FOOTER: APPLIES TO FRIEND_VIEW */
 
 footer .active {
     border-bottom: solid 3px #74FDF2;
