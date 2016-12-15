@@ -11,10 +11,19 @@
 
 <body ng-controller="mainCtrl">
 
-	<div ng-view></div>
+	<div ui-view></div>
+
+	<!--FOOTER NAVIGATION-->
+	<footer>
+
+	  <a ui-sref="friends">View Friends</a>
+	  <a ui-sref="newFriends">Find Friends</a>
+	  <a ui-sref="update">Update Profile</a>
+
+	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28//angular-route.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
 	<script src="js/app.js"></script>
 	<script src="js/mainCtrl.js"></script>
 	<script src="js/routeService.js"></script>
