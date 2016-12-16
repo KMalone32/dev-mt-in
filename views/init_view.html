@@ -1,5 +1,5 @@
 <!--NAVIGATION & SEARCH-->
-<header>
+<header  ng-init="aTag='n'">
 
     <img class="nav-button" src="images/Icons/init_Search.svg">
     <h6>DevMountain</h6>
@@ -16,11 +16,11 @@
             <p>Welcome to <span class="text-turquoise">DevMountain</span> Social</p>
             <p>Add Some Info So Friends Can Find You</p>
         </div>
-        <input class="small-box" type="text" placeholder="Full Name"/>
-        <input class="small-box" type="text" placeholder="Tagline">
-        <input class="small-box" type="text" placeholder="Profile Image Url">
-        <textarea class="large-box" type="text" placeholder="Bio"></textarea><br>
-        <input class="btn" type="submit" value="Save Changes">
+        <input class="small-box" type="text" placeholder="Full Name" ng-model="fullName"/>
+        <input class="small-box" type="text" placeholder="Tagline" ng-model="tagline">
+        <input class="small-box" type="text" placeholder="Profile Image Url" ng-model="profilePic">
+        <textarea class="large-box" type="text" placeholder="Bio" ng-model="bio"></textarea><br>
+        <input class="btn" type="submit" value="Save Changes" ui-sref="landing" ng-click="saveProfile()">
     </section>
 
     <!--RIGHT SECTION OF MAIN-->
@@ -30,7 +30,7 @@
                 <img src="https://media.licdn.com/mpr/mpr/shrinknp_800_800/AAEAAQAAAAAAAAOQAAAAJGRkYzVlZjc1LThiOTAtNDY4MS05MTEyLWFhNjgzNTRkNmUwZQ.jpg">
             </div>
             <div class="profile-triangle">
-                <img src="">
+                <img src="{{profilePic}}">
             </div>
             <div class="profile-shadow1"></div>
             <div class="profile-shadow2"></div>

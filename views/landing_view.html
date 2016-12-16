@@ -1,8 +1,8 @@
 <!--NAVIGATION-->
-<header>
+<header  ng-init="aTag='n'">
 
     <div class="profile-icon">
-        <img id="profile-pic" src="">
+        <img id="profile-pic" src="{{pPic}}">
     </div>
     <div class="line"></div>
     <h6>DevMountain</h6>
@@ -16,19 +16,10 @@
     <!--LEFT SECTION OF MAIN-->
     <section class="left-side">
         <br>
-        <h1 id="first-name">Chis</h1>
-        <h1 id="last-name">Johnson</h1>
-        <p id="tagline">SOME AWESOME TAGLINE ABOUT YOU</p>
-        <p class="para"> Lorem ipsum dolor sit amet, luctus neque adipiscing.
-            Fusce taciti, nec porta varius, nec turpis. Tristique
-            lacus sem, aliquam feugiat amet, purus fusce ipsum.
-            In eget, vestibulum a mauris, et amet enim. Ornare lacus.
-            Tincidunt praesent, quia euismod, aliquam vestibulum. Amet eget
-            volutpat. Quam vehicula enim. Numquam est vel, wisi scelerisque.</p>
-        <p class="para"> Id nibh rhoncus, ullamcorper ipsum, ullamcorper eget nulla.
-            Velit suscipit proin. Tincidunt praesent, quia euismod,
-            aliquam vestibulum. Amet eget volutpat. Quam vehicula enim.
-            Numquam est vel, wisi scelerisque.</p>
+        <h1 id="first-name">{{pfFirst}}</h1>
+        <h1 id="last-name">{{pfLast}}</h1>
+        <p id="tagline">{{pTagline}}</p>
+        <p class="para">{{pBio}}</p>
     </section>
 
     <!--RIGHT SECTION OF MAIN-->
@@ -38,7 +29,7 @@
                 <img src="https://media.licdn.com/mpr/mpr/shrinknp_800_800/AAEAAQAAAAAAAAOQAAAAJGRkYzVlZjc1LThiOTAtNDY4MS05MTEyLWFhNjgzNTRkNmUwZQ.jpg">
             </div>
             <div class="profile-triangle">
-                <img id="profile-pic" src="">
+                <img id="profile-pic" src="{{pPic}}">
             </div>
             <div class="profile-shadow1"></div>
             <div class="profile-shadow2"></div>

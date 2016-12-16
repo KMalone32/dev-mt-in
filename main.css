@@ -90,6 +90,7 @@ main .left-side .para {
 	font-size: 10.2px;
 	line-height: 14px;
 	text-align: justify;
+	height: 250px;
 	text-justify: inter-word;
 	width: 200px;
 	margin: auto;
@@ -183,8 +184,8 @@ main .left-side .btn {
 
 .profile-icon {
   -webkit-clip-path: polygon(52% 75%, 0 0, 100% 0);
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   overflow: hidden;
   background: rgba(116, 253, 242, 1);
   margin: 25px 20px 20px 20px;
@@ -289,6 +290,11 @@ main .friend-header h4 {
     margin-right: 37px;
 }
 
+main .friend-header #pSettings-header {
+	width: 100%;
+	margin: 0;
+}
+
 main .friend-header svg {
     padding: 10px;
 }
@@ -349,8 +355,6 @@ main .left-side .btn-add-friend {
 
 main .right-side h4 {
 	text-align: center;
-	width: 100%;
-	margin: 0;
 }
 
 main .right-side .update-profile {
@@ -394,9 +398,9 @@ footer {
 footer a {
 	margin: 20px;
 	font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
+  font-weight: 700;
 	font-size: 13.2px;
-    line-height: 18px;
+  line-height: 18px;
 	color: #A9A9A9;
 	text-decoration: none;
 }
@@ -404,5 +408,5 @@ footer a {
 /* FOOTER: APPLIES TO FRIEND_VIEW */
 
 footer .active {
-    border-bottom: solid 3px #74FDF2;
+  border-bottom: solid 3px #74FDF2;
 }
