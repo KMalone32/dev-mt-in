@@ -1,7 +1,11 @@
 angular.module("devMtnApp", ["ui.router"])
 .config(function($stateProvider, $urlRouterProvider) {
 
-  $urlRouterProvider.otherwise('/views');
+  if (localStorage.getItem("_profile") === null) {
+    $urlRouterProvider.otherwise('/views');
+  } else {
+    $urlRouterProvider.otherwise('/landing');
+  }
 
   $stateProvider
   .state('views', {
@@ -22,7 +26,7 @@ angular.module("devMtnApp", ["ui.router"])
   .state('fProfile', {
     url: '/fProfile',
     templateUrl: 'views/friends_profile_view.html',
-    controller:'landingCtrl'
+    controller:'friendCtrl'
   })
   .state('newFriends', {
     url: '/newFriends',

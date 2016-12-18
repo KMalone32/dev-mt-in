@@ -295,7 +295,7 @@ main .friend-header #pSettings-header {
 	margin: 0;
 }
 
-main .friend-header svg {
+main .friend-header .nav-button {
     padding: 10px;
 }
 
@@ -314,12 +314,56 @@ main .friend-pics .pic {
 	overflow: hidden;
 	padding: 10px 0px 0px 10px;
 	margin-right: 5px;
+	color: transparent;
 }
 
 main .friend-pics .pic img {
 	height: 110px;
 	width: 100%;
 	object-fit: cover;
+}
+
+main .pic:hover {
+	color: #74FDF2;
+}
+
+main .search-friends {
+	position: absolute;
+  padding: 9px;
+  border: none;
+  border-right: solid 1px #EAEAEA;
+	border-left: solid 1px #EAEAEA;
+	margin-left: 83px;
+  width: 0px;
+	opacity: 0;
+	display: none;
+}
+
+main .hover-over {
+	margin-top: -40px;
+	width: 142px;
+	height: 110px;
+}
+
+main .hover-over p {
+	width: 142px;
+	text-align: center;
+	padding: 20px;
+	margin-top: -110px;
+}
+
+main .hover-over pre {
+	margin-top: 15px;
+  margin-left: 25px;
+	position: absolute;
+	background: transparent;
+	border: solid 1px transparent;
+	padding: 1px 4px;
+	cursor: pointer;
+}
+
+main .hover-over pre:hover {
+	border-color: #74FDF2;
 }
 
 /* MAIN: APPLIES TO NEWFRIENDS_VIEW */

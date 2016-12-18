@@ -1,0 +1,37 @@
+To Do List:
+
+1 {
+  Fix picture so it doesn't stretch weird;
+}
+
+2 {
+  Add server functionality;
+}
+
+3 {
+  Update view friends/find friends lists when adding/removing people;
+}
+
+4 {
+  Clean up Controllers/Services;
+}
+
+5 {
+  Ham Menu functionality;
+}
+
+6 {
+  Search Button functionality on initial view;
+}
+
+7 {
+  Back arrow to function like a back arrow;
+}
+
+8 {
+  Hover over image lettering needs to be changed;
+}
+
+9 {
+  Black diamond;
+}

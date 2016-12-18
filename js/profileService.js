@@ -6,14 +6,14 @@ angular.module("devMtnApp").service("profileService", function() {
     localStorage["_profile"] = [];
   }
 
-  this.setInfo = function(first, last, tagline, pic, bio) {
+  this.setInfo = function(first, last, tagline, pic, bio, friends) {
     console.log(bio);
     var obj = {
-      first: first,
-      last: last,
+      name: first + " " + last,
       tagline: tagline,
-      pic: pic,
-      bio: bio
+      bio: bio,
+      profileUrl: pic,
+      friends: friends
     }
     toLocStor[0] = obj;
     localStorage["_profile"] = JSON.stringify(toLocStor);
