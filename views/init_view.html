@@ -30,11 +30,19 @@
                 <img src="https://media.licdn.com/mpr/mpr/shrinknp_800_800/AAEAAQAAAAAAAAOQAAAAJGRkYzVlZjc1LThiOTAtNDY4MS05MTEyLWFhNjgzNTRkNmUwZQ.jpg">
             </div>
             <div class="profile-triangle">
-                <img src="{{profilePic}}">
+                <img id="tri-image" src="{{profilePic}}">
             </div>
             <div class="profile-shadow1"></div>
             <div class="profile-shadow2"></div>
             <div class="profile-shadow3"></div>
+        </div>
+        <div class="move-profile-buttons">
+          <img id="up-a" ng-click="moveUp()" src="images/Icons/Back-Arrow.svg">
+          <img id="left-a" ng-click="moveLeft()" src="images/Icons/Back-Arrow.svg">
+          <button id="plus" ng-click="zoom()">+</button>
+          <button id="minus" ng-click="unZoom()">-</button>
+          <img id="right-a" ng-click="moveRight()" src="images/Icons/Back-Arrow.svg">
+          <img id="down-a" ng-click="moveDown()" src="images/Icons/Back-Arrow.svg">
         </div>
     </section>
 

@@ -12,6 +12,11 @@ angular.module("devMtnApp").controller("landingCtrl", function($scope, profileSe
   $scope.pPic = profileInfo[0].profileUrl;
   $scope.pFriends = profileInfo[0].friends;
 
+  var imageSettings = JSON.parse(localStorage["_imgSettings"]);
+  $(".profile-triangle img").css("margin-left", imageSettings[0].left);
+  $(".profile-triangle img").css("margin-top", imageSettings[0].top);
+  $(".profile-triangle img").height(imageSettings[0].height);
+
   $scope.$watch('fullName', function(name){
     $scope.pfFirst = name.split(" ")[0];
     $scope.pfLast = name.split(" ")[1];

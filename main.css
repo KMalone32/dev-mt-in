@@ -182,6 +182,13 @@ main .left-side .btn {
   margin-top: 242px;
 }
 
+#profile-pic {
+	height: 36px;
+  margin-top: -3px;
+  margin-left: 0px;
+	opacity: 0.4;
+}
+
 .profile-icon {
   -webkit-clip-path: polygon(52% 75%, 0 0, 100% 0);
   width: 35px;
@@ -255,9 +262,103 @@ main .right-side .profile-shadow3 {
 }
 
 .profile-triangle img {
-    width: 400px;
     height: 300px;
+		min-height: 260px;
+		margin-left: 0px;
     opacity: 0.4;
+}
+
+.move-profile-buttons {
+	position: relative;
+	margin-top: 118px;
+	display: none;
+}
+
+#up-a {
+	transform: rotate(90deg);
+  position: absolute;
+  margin-top: -27px;
+  margin-left: 41px;
+	padding: 5px;
+	border: solid 2px #EAEAEA;
+	width: 25px;
+	height: 25px;
+}
+
+#up-a:hover {
+	border-color: #74FDF2;
+	cursor: pointer;
+}
+
+#right-a {
+	transform: rotate(180deg);
+	position: absolute;
+	margin-left: 54px;
+	padding: 5px;
+	border: solid 2px #EAEAEA;
+	width: 25px;
+	height: 25px;
+}
+
+#right-a:hover {
+	border-color: #74FDF2;
+	cursor: pointer;
+}
+
+#left-a {
+	width: 25px;
+	height: 25px;
+	padding: 5px;
+	margin-right: 2px;
+	border: solid 2px #EAEAEA;
+}
+
+#left-a:hover {
+	border-color: #74FDF2;
+	cursor: pointer;
+}
+
+#down-a {
+	transform: rotate(270deg);
+  position: absolute;
+  margin-left: 14px;
+  margin-top: 27px;
+	padding: 5px;
+	border: solid 2px #EAEAEA;
+	width: 25px;
+	height: 25px;
+}
+
+#down-a:hover {
+	border-color: #74FDF2;
+	cursor: pointer;
+}
+
+#plus {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background: none;
+  border: solid 2px #EAEAEA;
+}
+
+#plus:hover {
+	border-color: #74FDF2;
+	cursor: pointer;
+}
+
+#minus {
+	margin-left: 27px;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	background: none;
+  border: solid 2px #EAEAEA;
+}
+
+#minus:hover {
+	border-color: #74FDF2;
+	cursor: pointer;
 }
 
 /* MAIN: APPLIES TO FRIEND_VIEW */

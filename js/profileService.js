@@ -7,7 +7,6 @@ angular.module("devMtnApp").service("profileService", function() {
   }
 
   this.setInfo = function(first, last, tagline, pic, bio, friends) {
-    console.log(bio);
     var obj = {
       name: first + " " + last,
       tagline: tagline,

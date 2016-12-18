@@ -1,9 +1,5 @@
 To Do List:
 
-1 {
-  Fix picture so it doesn't stretch weird;
-}
-
 2 {
   Add server functionality;
 }
