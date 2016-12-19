@@ -20,10 +20,6 @@ To Do List:
   Back arrow to function like a back arrow;
 }
 
-8 {
-  Hover over image lettering needs to be changed;
-}
-
 9 {
   Black diamond;
 }

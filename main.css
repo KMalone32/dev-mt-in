@@ -86,15 +86,15 @@ main .left-side #tagline {
 }
 
 main .left-side .para {
-	font-family: 'Open Sans', serif;
-	font-size: 10.2px;
-	line-height: 14px;
-	text-align: justify;
-	height: 250px;
-	text-justify: inter-word;
-	width: 200px;
-	margin: auto;
-	margin-top: 20px;
+    font-family: 'Open Sans', serif;
+    font-size: 10.2px;
+    line-height: 14px;
+    text-align: justify;
+    white-space: pre-wrap;
+    height: 250px;
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
 }
 
 /* MAIN: APPLIES TO INIT_VIEW */
@@ -433,12 +433,12 @@ main .pic:hover {
 
 main .search-friends {
 	position: absolute;
-  padding: 9px;
-  border: none;
-  border-right: solid 1px #EAEAEA;
+    padding: 9px;
+    border: none;
+    border-right: solid 1px #EAEAEA;
 	border-left: solid 1px #EAEAEA;
 	margin-left: 83px;
-  width: 0px;
+    width: 0px;
 	opacity: 0;
 	display: none;
 }
@@ -450,20 +450,22 @@ main .hover-over {
 }
 
 main .hover-over p {
-	width: 142px;
-	text-align: center;
-	padding: 20px;
-	margin-top: -110px;
+    width: 142px;
+    font-family: 'Lora', serif;
+    text-align: center;
+    padding: 20px;
+    margin-top: -110px;
 }
 
 main .hover-over pre {
-	margin-top: 15px;
-  margin-left: 25px;
-	position: absolute;
-	background: transparent;
-	border: solid 1px transparent;
-	padding: 1px 4px;
-	cursor: pointer;
+    margin-top: 15px;
+    margin-left: 21px;
+    position: absolute;
+    background: transparent;
+    font-family: 'Lora', serif;
+    border: solid 1px transparent;
+    padding: 1px 4px;
+    cursor: pointer;
 }
 
 main .hover-over pre:hover {

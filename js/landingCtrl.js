@@ -18,6 +18,7 @@ angular.module("devMtnApp").controller("landingCtrl", function($scope, profileSe
 
     /* Stores The Clicked Profile In LocalStorage */
     $scope.storeFriend = function (friend) {
+        console.log(friend);
         localStorage["_fProfile"] = JSON.stringify([friend]);
     }
 
@@ -45,6 +46,8 @@ angular.module("devMtnApp").controller("landingCtrl", function($scope, profileSe
     /* Underlines Active Tab In SPA */
     $scope.$watch('aTag', function(val) {
         styleService.styleActiveTab(val);
+        //$scope.friends = friendService.sendFriends();
+        //$scope.nonFriends = friendService.sendNonFriends();
     });
 
     /* Displays The Search Bar On The View Friends View */
