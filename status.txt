@@ -8,10 +8,6 @@ To Do List:
   Update view friends/find friends lists when adding/removing people;
 }
 
-4 {
-  Clean up Controllers/Services;
-}
-
 5 {
   Ham Menu functionality;
 }

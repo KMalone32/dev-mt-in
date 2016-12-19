@@ -262,9 +262,12 @@ main .right-side .profile-shadow3 {
 }
 
 .profile-triangle img {
-    height: 300px;
-		min-height: 260px;
-		margin-left: 0px;
+    min-height: 260px;
+    margin: auto;
+    right: 0;
+    left: 0;
+    width: 80%;
+    position: absolute;
     opacity: 0.4;
 }
 
